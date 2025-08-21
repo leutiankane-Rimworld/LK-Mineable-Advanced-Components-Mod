@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<Patch>
+
+<!-- Penetrating Scanner Deposit -->
+<Operation Class="PatchOperationAdd">
+	<xpath>Defs/ThingDef[defName="ComponentSpacer"]</xpath>
+	<value>
+		<deepCommonality>.75</deepCommonality>
+		<deepCountPerPortion>15</deepCountPerPortion>
+		<deepLumpSizeRange>2~6</deepLumpSizeRange>
+	</value>
+</Operation>
+
+
+
+<!-- Ideology Worksite -->
+<Operation Class="PatchOperationFindMod">
+	<mods>
+		<li>Ideology</li>
+	</mods>
+<match Class="PatchOperationAdd">
+<xpath>Defs/SitePartDef[defName="WorkSite_Mining"]/lootTable</xpath>
+	<value>
+	<li>
+		<thing>ComponentSpacer</thing>
+		<weight>0.15</weight> <!-- 6.9%~ (nice.) -->
+	</li>
+	</value>
+</match>
+</Operation>
+
+</Patch>
