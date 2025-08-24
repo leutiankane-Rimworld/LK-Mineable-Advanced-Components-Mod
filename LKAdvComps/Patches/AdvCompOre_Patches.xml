@@ -10,7 +10,13 @@
 		<deepLumpSizeRange>2~6</deepLumpSizeRange>
 	</value>
 </Operation>
-
+<!-- Long-Ranged Mineral Scanner -->
+<Operation Class="PatchOperationAdd">
+	<xpath>Defs/GenStepDef[defName="PreciousLump"]/genStep/mineables</xpath>
+	<value>
+		<li>LK_MineableAdvComp</li>
+	</value>
+</Operation>
 
 
 <!-- Ideology Worksite -->
@@ -30,3 +36,4 @@
 </Operation>
 
 </Patch>
+
