@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<Patch>
+
+<!-- Adds to asteroids -->
+<Operation Class="PatchOperationFindMod">
+	<mods>
+		<li>Odyssey</li>
+	</mods>
+<match Class="PatchOperationAdd">
+	<xpath>Defs/GenStepDef[defName="Asteroid"]/genStep/mineableCounts</xpath>
+    <value>   
+    <LK_MineableAdvComp>4~15</LK_MineableAdvComp>
+    </value>
+	</match>
+</Operation>
+<Operation Class="PatchOperationFindMod">
+	<mods>
+		<li>Odyssey</li>
+	</mods>
+<match Class="PatchOperationAdd">
+	<xpath>Defs/GenStepDef[defName="Asteroid_NoRuins"]/genStep/mineableCounts</xpath>
+    <value>
+     <LK_MineableAdvComp>4~15</LK_MineableAdvComp>
+    </value>
+	</match>
+</Operation>
+
+
+
+</Patch>
